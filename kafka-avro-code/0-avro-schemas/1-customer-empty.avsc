@@ -1,10 +1,14 @@
 {
      "type": "record",
      "namespace": "com.example",
-     "name": "",
-     "doc": "",
+     "name": "Customer",
+     "doc": "Avro Schema for serialization & deserialization of a customer",
      "fields": [
-       { "name": "", "type": "", "doc": "" },
-       { "name": "", "type": "", "doc": "" }
+       { "name": "firstName", "type": "string", "doc": "First name of the customer" },
+       { "name": "lastName", "type": "string", "doc": "Last name of the customer" }
+       { "name": "age", "type": "int", "doc": "Age of the customer" }
+       { "name": "height", "type": "int", "doc": "Height in cm" }
+       { "name": "weight", "type": "int", "doc": "Weight in lbs" }
+       { "name": "automatedEmail", "type": "boolean", "default" : true, "doc": "True if the user wants marketing emails" }
      ]  
 }
